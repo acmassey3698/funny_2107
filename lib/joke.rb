@@ -1,9 +1,9 @@
 class Joke
 
-  attr_reader :index, :setup, :punchline
+  attr_reader :id, :setup, :punchline
 
-  def initialize(index, setup, punchline)
-    @index = index
+  def initialize(id, setup, punchline)
+    @id = id
     @setup = setup
     @punchline = punchline
   end

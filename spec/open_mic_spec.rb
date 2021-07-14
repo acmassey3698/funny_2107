@@ -25,7 +25,7 @@ RSpec.describe OpenMic do
     expect(open_mic.performers).to eq([user_1, user_2])
   end
 
-  xit 'Knows when a joke has been repeated' do
+  it 'Knows when a joke has been repeated' do
     open_mic = OpenMic.new({location: "Comedy Works", date: "11-20-18"})
 
     user_1 = User.new("Sal")

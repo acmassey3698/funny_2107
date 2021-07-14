@@ -1,3 +1,5 @@
+require './lib/joke'
+
 class User
   attr_accessor :jokes
 
@@ -18,7 +20,7 @@ class User
 
   def joke_by_id(joke_id)
     joke = @jokes.find do |joke|
-      joke.index == joke_id
+      joke.id == joke_id
     end
   end
 end
